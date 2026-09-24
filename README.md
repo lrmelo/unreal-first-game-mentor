@@ -25,23 +25,55 @@ Esses documentos são criados no projeto do jogo quando necessário. A pessoa n�
 
 ## Instalação global pelo GitHub
 
-A instalação fica disponível para o usuário em todos os projetos, não apenas no repositório atual.
+A instalação é feita uma única vez e fica disponível em todos os projetos abertos pelo mesmo usuário do computador. Não é necessário copiar estas skills para cada jogo, clonar este repositório dentro do projeto da Unreal ou conhecer SDD.
 
-### Pelo terminal do Codex
+### Codex no VS Code — passo a passo
 
-Adicione este repositório como marketplace:
+Antes de começar, instale ou atualize a [extensão oficial do Codex para o VS Code](https://marketplace.visualstudio.com/items?itemName=openai.chatgpt) e entre na sua conta.
+
+1. Abra o VS Code. Pode ser em qualquer pasta.
+2. Abra o terminal integrado pelo menu **Terminal > Novo Terminal**.
+3. Execute o comando abaixo para confirmar que o Codex está disponível:
+
+```powershell
+codex --version
+```
+
+Se aparecer um número de versão, continue. Se aparecer a mensagem de que `codex` não foi reconhecido, instale o [Codex CLI seguindo o guia oficial](https://learn.chatgpt.com/docs/codex/cli), feche e abra o VS Code novamente e repita este passo.
+
+4. Adicione este repositório como uma fonte de plugins:
 
 ```powershell
 codex plugin marketplace add lrmelo/unreal-first-game-mentor
 ```
 
-Depois, instale o plugin:
+5. Instale o plugin:
 
 ```powershell
 codex plugin add unreal-first-game-mentor@unreal-first-game-mentor
 ```
 
-Reinicie o Codex ou o aplicativo desktop e comece uma nova conversa.
+6. Confirme a instalação:
+
+```powershell
+codex plugin list
+```
+
+Procure por `unreal-first-game-mentor` na lista exibida.
+
+7. Pressione `Ctrl+Shift+P`, procure por **Developer: Reload Window** e execute esse comando.
+8. Abra o Codex pelo ícone na lateral do VS Code. Se o ícone não estiver visível, pressione `Ctrl+Shift+P` e execute **Codex: Open Codex Sidebar**.
+9. Comece uma conversa nova e escreva normalmente:
+
+> Quero criar meu primeiro jogo na Unreal e não sei como começar.
+
+Pronto. O Codex poderá escolher automaticamente a skill adequada conforme a conversa. Você não precisa decorar nomes de skills, usar comandos especiais ou aprender uma metodologia.
+
+> **O que significa instalação global?** O plugin fica disponível para todos os projetos usados pela mesma conta do sistema operacional. Em outro computador ou em outra conta de usuário, a instalação precisa ser repetida. Se o VS Code estiver configurado para trabalhar dentro do WSL, execute os comandos no terminal desse mesmo ambiente.
+
+### Pelo Codex CLI fora do VS Code
+
+Os mesmos dois comandos de instalação podem ser executados no PowerShell, no Windows Terminal ou em outro terminal onde o Codex CLI esteja instalado. Depois, reinicie o Codex e comece uma conversa nova.
 
 ### Pelo aplicativo desktop
 
@@ -71,13 +103,13 @@ Outros exemplos:
 
 ## Atualização
 
-Para buscar uma versão nova do marketplace:
+Para buscar uma versão nova, execute no terminal integrado do VS Code ou em outro terminal:
 
 ```powershell
 codex plugin marketplace upgrade unreal-first-game-mentor
 ```
 
-Depois da atualização, reinicie o aplicativo e abra uma nova conversa.
+Depois da atualização, use **Developer: Reload Window** no VS Code e abra uma nova conversa no Codex.
 
 ## Estrutura do repositório
 
@@ -111,4 +143,6 @@ Distribuído sob a [licença MIT](LICENSE). Ela permite usar, copiar, modificar 
 
 ## Referência oficial
 
-Consulte [Package your plugin](https://developers.openai.com/plugins/build/plugins) para a documentação atual de empacotamento e marketplaces do Codex.
+- [Extensão do Codex para IDEs](https://learn.chatgpt.com/docs/codex/ide)
+- [Skills no Codex](https://learn.chatgpt.com/docs/build-skills)
+- [Empacotamento e marketplaces de plugins](https://developers.openai.com/plugins/build/plugins)
