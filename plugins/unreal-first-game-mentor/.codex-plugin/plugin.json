@@ -1,0 +1,25 @@
+{
+  "name": "unreal-first-game-mentor",
+  "version": "0.1.0",
+  "description": "Orientação em Português do Brasil para iniciantes criarem o primeiro jogo na Unreal Engine.",
+  "author": {
+    "name": "Lucas Melo",
+    "url": "https://github.com/lrmelo"
+  },
+  "homepage": "https://github.com/lrmelo/unreal-first-game-mentor",
+  "repository": "https://github.com/lrmelo/unreal-first-game-mentor",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Primeiro Jogo na Unreal",
+    "shortDescription": "Crie seu primeiro jogo com orientação passo a passo.",
+    "longDescription": "Orienta pessoas sem experiência desde a ideia e a instalação da Unreal até a construção, os testes, as correções e as melhorias do primeiro jogo.",
+    "developerName": "Lucas Melo",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "Quero criar meu primeiro jogo na Unreal e não sei como começar.",
+      "Onde paramos e o que eu faço agora?",
+      "Quero melhorar uma parte do meu jogo."
+    ]
+  }
+}

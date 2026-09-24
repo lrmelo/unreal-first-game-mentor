@@ -1,0 +1,6 @@
+interface:
+  display_name: "Começar projeto Unreal"
+  short_description: "Transforme uma ideia no seu primeiro jogo jogável"
+  default_prompt: "Use $unreal-start-project para me ajudar a criar meu primeiro jogo na Unreal, mesmo que eu ainda não saiba por onde começar."
+policy:
+  allow_implicit_invocation: true

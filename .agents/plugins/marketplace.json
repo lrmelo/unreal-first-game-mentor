@@ -1,0 +1,20 @@
+{
+  "name": "unreal-first-game-mentor",
+  "interface": {
+    "displayName": "Primeiro Jogo na Unreal"
+  },
+  "plugins": [
+    {
+      "name": "unreal-first-game-mentor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/unreal-first-game-mentor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editores
+.idea/
+.vscode/
+
+# Python e caches locais
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Arquivos temporários
+*.tmp
+*.log
