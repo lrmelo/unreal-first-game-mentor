@@ -1,5 +1,10 @@
 # Histórico de versões
 
+## 0.1.1 — 2026-09-23
+
+- licença MIT adicionada;
+- metadados dos manifestos atualizados.
+
 ## 0.1.0 — 2026-09-23
 
 - primeira versão pública do repositório;

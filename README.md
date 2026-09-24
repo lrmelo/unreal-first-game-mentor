@@ -107,7 +107,7 @@ As skills podem ler e atualizar os três documentos `.ai` dentro do projeto esco
 
 ## Licença
 
-Este repositório ainda não possui uma licença de uso definida. Uma licença poderá ser adicionada pelo responsável antes de uma distribuição pública mais ampla.
+Distribuído sob a [licença MIT](LICENSE). Ela permite usar, copiar, modificar e distribuir o projeto, desde que o aviso de copyright e a licença sejam preservados.
 
 ## Referência oficial
 

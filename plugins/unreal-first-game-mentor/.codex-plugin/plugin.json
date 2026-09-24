@@ -1,6 +1,6 @@
 {
   "name": "unreal-first-game-mentor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Orientação em Português do Brasil para iniciantes criarem o primeiro jogo na Unreal Engine.",
   "author": {
     "name": "Lucas Melo",
@@ -8,6 +8,7 @@
   },
   "homepage": "https://github.com/lrmelo/unreal-first-game-mentor",
   "repository": "https://github.com/lrmelo/unreal-first-game-mentor",
+  "license": "MIT",
   "skills": "./skills/",
   "interface": {
     "displayName": "Primeiro Jogo na Unreal",
